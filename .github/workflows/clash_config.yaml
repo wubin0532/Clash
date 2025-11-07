@@ -4,7 +4,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "https://9a9416e59564e8b9042a08ddae5c343e.cdn-163.sbs/s?t=9a9416e59564e8b9042a08ddae5c343e.jpg！！"
+    url: "xxxx！！"
     type: http
     interval: 86400
     health-check:
