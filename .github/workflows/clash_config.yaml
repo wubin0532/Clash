@@ -157,6 +157,7 @@ rules:
   - RULE-SET,netflix_ip,🎬 NETFLIX
   - RULE-SET,telegram_ip,✉️ Telegram
   - RULE-SET,ibkr_domain,📊 IBKR
+  - DOMAIN-KEYWORD,firstrade,🇺🇲 美国节点
   - DOMAIN-SUFFIX,moomoo.com,📈 Moomoo
   - DOMAIN-SUFFIX,moomoobull.com,📈 Moomoo
   - RULE-SET,geolocation-!cn,✨ 默认代理
