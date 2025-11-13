@@ -163,6 +163,7 @@ rules:
   - DOMAIN-KEYWORD,firstrade,🇺🇲 美国节点
   - DOMAIN-SUFFIX,moomoo.com,📈 Moomoo
   - DOMAIN-SUFFIX,moomoobull.com,📈 Moomoo
+  - DOMAIN-KEYWORD,roblox,🇺🇲 美国节点
   - RULE-SET,geolocation-!cn,✨ 默认代理
   - RULE-SET,cn_domain,直连
   - RULE-SET,cn_ip,直连
