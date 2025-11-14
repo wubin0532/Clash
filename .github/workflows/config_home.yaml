@@ -154,6 +154,8 @@ rules:
   - RULE-SET,apple_domain,直连
   - RULE-SET,tiktok_domain,🎶 TikTok
   - RULE-SET,telegram_domain,✉️ Telegram
+  - RULE-SET,roblox_domain,🎮 Roblox
+  - RULE-SET,roblox_ip,🎮 Roblox,no-resolve
   - RULE-SET,netflix_domain,🎬 NETFLIX
   - RULE-SET,paypal_domain,💳 PayPal
   - RULE-SET,apple_ip,直连
@@ -161,7 +163,6 @@ rules:
   - RULE-SET,netflix_ip,🎬 NETFLIX
   - RULE-SET,telegram_ip,✉️ Telegram
   - RULE-SET,ibkr_domain,📊 IBKR
-  - RULE-SET,roblox_domain,🎮 Roblox
   - DOMAIN-KEYWORD,firstrade,🇺🇲 美国节点
   - DOMAIN-SUFFIX,moomoo.com,📈 Moomoo
   - DOMAIN-SUFFIX,moomoobull.com,📈 Moomoo
