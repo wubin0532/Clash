@@ -160,9 +160,8 @@ rules:
   - RULE-SET,google_ip,🔎 Google
   - RULE-SET,netflix_ip,🎬 NETFLIX
   - RULE-SET,telegram_ip,✉️ Telegram
-  - DOMAIN-KEYWORD,roblox,🎮 Roblox
-  - DOMAIN-SUFFIX,rbxcdn.com,🎮 Roblox
   - RULE-SET,ibkr_domain,📊 IBKR
+  - RULE-SET,roblox_domain,🎮 Roblox
   - DOMAIN-KEYWORD,firstrade,🇺🇲 美国节点
   - DOMAIN-SUFFIX,moomoo.com,📈 Moomoo
   - DOMAIN-SUFFIX,moomoobull.com,📈 Moomoo
@@ -183,6 +182,7 @@ rule-providers:
   ai: {  <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
+  roblox_domain: { <<: *domain, url: "https://raw.githubusercontent.com/wubin0532/Clash/refs/heads/main/.github/workflows/robloxsite.mrs"}
   github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
@@ -202,3 +202,4 @@ rule-providers:
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
   netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
   apple_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs"}
+  roblox_ip: {<<: *ip, url: "https://raw.githubusercontent.com/wubin0532/Clash/refs/heads/main/.github/workflows/robloxip.mrs"}
