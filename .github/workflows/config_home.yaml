@@ -1,3 +1,4 @@
+
 # 必读！！！
 # 注意规则在满足自己需求情况下，尽量做到精简，不要过度复杂，以免影响性能。
 # 跑裸核用户请自行去掉下方控制面板模块的注释。
@@ -155,7 +156,6 @@ rules:
   - RULE-SET,tiktok_domain,🎶 TikTok
   - RULE-SET,telegram_domain,✉️ Telegram
   - RULE-SET,roblox_domain,🎮 Roblox
-  - RULE-SET,roblox_ip,🎮 Roblox,no-resolve
   - RULE-SET,netflix_domain,🎬 NETFLIX
   - RULE-SET,paypal_domain,💳 PayPal
   - RULE-SET,apple_ip,直连
@@ -183,7 +183,7 @@ rule-providers:
   ai: {  <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
-  roblox_domain: { <<: *domain, url: "https://raw.githubusercontent.com/wubin0532/Clash/refs/heads/main/.github/workflows/robloxsite.mrs"}
+  roblox_domain: { <<: *class, url: "https://raw.githubusercontent.com/wubin0532/Clash/refs/heads/main/.github/workflows/Robloxsite.list"}
   github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
@@ -203,4 +203,3 @@ rule-providers:
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
   netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
   apple_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs"}
-  roblox_ip: {<<: *ip, url: "https://raw.githubusercontent.com/wubin0532/Clash/refs/heads/main/.github/workflows/robloxip.mrs"}
