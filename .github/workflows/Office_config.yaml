@@ -113,8 +113,9 @@ proxy-groups:
   - {name: 🎶 TikTok, type: select, proxies: [🇯🇵 日本故转, 🇸🇬 狮城故转, 🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
   - {name: ✉️ Telegram, type: select, proxies: [🇭🇰 香港故转, 🇯🇵 日本故转, 🇸🇬 狮城故转, 🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
   - {name: 🎬 NETFLIX, type: select, proxies: [🇸🇬 狮城故转, 🇭🇰 香港故转, 🇯🇵 日本故转, 🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
+  - {name: 🎮 Roblox, type: select, proxies: [🇺🇲 美国节点, 🇭🇰 香港节点, 🇸🇬 狮城节点, 🇺🇸 美国自动, 🌏 其它节点]}
   - {name: 💳 PayPal, type: select, proxies: [🇯🇵 日本故转, 🇭🇰 香港故转, 🇸🇬 狮城故转, 🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
-  - {name: 📊 IBKR, type: select, proxies: [🇭🇰 香港节点, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
+  - {name: 📊 IBKR, type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
   - {name: 📈 Moomoo, type: select, proxies: [🇸🇬 狮城节点,🇭🇰 香港节点, 🇺🇲 美国节点, 🌏 其它节点, 🗺️ 全部节点, 直连]}
   - {name: 🧭 漏网之鱼, type: select, proxies: [✨ 默认代理, 🇭🇰 香港故转, 🇯🇵 日本故转, 🇸🇬 狮城故转, 🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🔀 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇹🇼 台湾节点, 🌏 其它节点]}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
@@ -131,6 +132,8 @@ proxy-groups:
   - {name: 🇯🇵 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
   - {name: 🇸🇬 狮城自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(港|台|韩|日|美)).)*$" }
   - {name: 🇺🇸 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
+  - {name: 🇹🇼 台湾自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?i)台|tw|taiwan|台湾|中华民国"}
+  - {name: 🌏 其它自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?i)Canada|Great Britain|Turkey|India|Netherlands|France|Germany|Vietnam|Malaysia|Thailand|Philippines"}
   - {name: 🔀 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🗺️ 全部节点, type: select, include-all: true}
 
@@ -150,6 +153,8 @@ rules:
   - RULE-SET,apple_domain,直连
   - RULE-SET,tiktok_domain,🎶 TikTok
   - RULE-SET,telegram_domain,✉️ Telegram
+  - RULE-SET,roblox_domain,🎮 Roblox
+  - RULE-SET,roblox_ip,🎮 Roblox,no-resolve
   - RULE-SET,netflix_domain,🎬 NETFLIX
   - RULE-SET,paypal_domain,💳 PayPal
   - RULE-SET,apple_ip,直连
@@ -177,6 +182,7 @@ rule-providers:
   ai: {  <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
+  roblox_domain: { <<: *domain, url: "https://raw.githubusercontent.com/wubin0532/Clash/refs/heads/main/.github/workflows/robloxsite.mrs"}
   github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
@@ -196,3 +202,4 @@ rule-providers:
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
   netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
   apple_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs"}
+  roblox_ip: {<<: *ip, url: "https://raw.githubusercontent.com/wubin0532/Clash/refs/heads/main/.github/workflows/robloxip.mrs"}
