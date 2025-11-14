@@ -155,7 +155,7 @@ rules:
   - RULE-SET,apple_domain,直连
   - RULE-SET,tiktok_domain,🎶 TikTok
   - RULE-SET,telegram_domain,✉️ Telegram
-  - RULE-SET,roblox_domain,🎮 Roblox
+  - RULE-SET,roblox_class,🎮 Roblox
   - RULE-SET,netflix_domain,🎬 NETFLIX
   - RULE-SET,paypal_domain,💳 PayPal
   - RULE-SET,apple_ip,直连
@@ -183,7 +183,7 @@ rule-providers:
   ai: {  <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
-  roblox_domain: { <<: *class, url: "https://raw.githubusercontent.com/wubin0532/Clash/refs/heads/main/.github/workflows/Robloxsite.list"}
+  roblox_class: { <<: *class, url: "https://raw.githubusercontent.com/wubin0532/Clash/refs/heads/main/.github/workflows/Robloxsite.list"}
   github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
