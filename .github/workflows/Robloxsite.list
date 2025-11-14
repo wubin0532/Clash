@@ -5,24 +5,24 @@
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 1
 # TOTAL: 4
-  - DOMAIN-SUFFIX,roblox.com
-  - DOMAIN-SUFFIX,rbxcdn.com
-  - DOMAIN-SUFFIX,robloxlabs.com
-  - DOMAIN-SUFFIX,roblox.dev
+DOMAIN-SUFFIX,roblox.com
+DOMAIN-SUFFIX,rbxcdn.com
+DOMAIN-SUFFIX,robloxlabs.com
+DOMAIN-SUFFIX,roblox.dev
 
   # API 与 CDN
-  - DOMAIN-SUFFIX,api.roblox.com
-  - DOMAIN-SUFFIX,clientsettingscdn.roblox.com
-  - DOMAIN-SUFFIX,thumbnails.roblox.com
-  - DOMAIN-SUFFIX,assetgame.roblox.com
-  - DOMAIN-SUFFIX,gamejoin.roblox.com
-  - DOMAIN-SUFFIX,presence.roblox.com
-  - DOMAIN-SUFFIX,captcha.roblox.com
-  - DOMAIN-SUFFIX,auth.roblox.com
-  - DOMAIN-SUFFIX,versioncompatibility.roblox.com
-  - DOMAIN-SUFFIX,www.rprxy.com
-  - DOMAIN-SUFFIX,setup.rbxcdn.com
+ DOMAIN-SUFFIX,api.roblox.com
+ DOMAIN-SUFFIX,clientsettingscdn.roblox.com
+ DOMAIN-SUFFIX,thumbnails.roblox.com
+ DOMAIN-SUFFIX,assetgame.roblox.com
+ DOMAIN-SUFFIX,gamejoin.roblox.com
+ DOMAIN-SUFFIX,presence.roblox.com
+ DOMAIN-SUFFIX,captcha.roblox.com
+ DOMAIN-SUFFIX,auth.roblox.com
+ DOMAIN-SUFFIX,versioncompatibility.roblox.com
+ DOMAIN-SUFFIX,www.rprxy.com
+ DOMAIN-SUFFIX,setup.rbxcdn.com
 
   # 关键词兜底（防止漏掉新子域）
-  - DOMAIN-KEYWORD,roblox
-  - DOMAIN-KEYWORD,rbxcdn
+ DOMAIN-KEYWORD,roblox
+ DOMAIN-KEYWORD,rbxcdn
