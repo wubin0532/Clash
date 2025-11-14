@@ -113,6 +113,7 @@ proxy-groups:
   - {name: 🎶 TikTok, type: select, proxies: [🇯🇵 日本故转, 🇸🇬 狮城故转, 🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
   - {name: ✉️ Telegram, type: select, proxies: [🇭🇰 香港故转, 🇯🇵 日本故转, 🇸🇬 狮城故转, 🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
   - {name: 🎬 NETFLIX, type: select, proxies: [🇸🇬 狮城故转, 🇭🇰 香港故转, 🇯🇵 日本故转, 🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
+  - {name: 🎮 Roblox, type: select, proxies: [🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
   - {name: 💳 PayPal, type: select, proxies: [🇯🇵 日本故转, 🇭🇰 香港故转, 🇸🇬 狮城故转, 🇺🇸 美国故转, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
   - {name: 📊 IBKR, type: select, proxies: [🇭🇰 香港节点, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌏 其它节点]}
   - {name: 📈 Moomoo, type: select, proxies: [🇸🇬 狮城节点,🇭🇰 香港节点, 🇺🇲 美国节点, 🌏 其它节点, 🗺️ 全部节点, 直连]}
@@ -159,11 +160,12 @@ rules:
   - RULE-SET,google_ip,🔎 Google
   - RULE-SET,netflix_ip,🎬 NETFLIX
   - RULE-SET,telegram_ip,✉️ Telegram
+  - DOMAIN-KEYWORD,roblox,🎮 Roblox
+  - DOMAIN-SUFFIX,rbxcdn.com,🎮 Roblox
   - RULE-SET,ibkr_domain,📊 IBKR
   - DOMAIN-KEYWORD,firstrade,🇺🇲 美国节点
   - DOMAIN-SUFFIX,moomoo.com,📈 Moomoo
   - DOMAIN-SUFFIX,moomoobull.com,📈 Moomoo
-  - DOMAIN-KEYWORD,roblox,🇺🇲 美国节点
   - RULE-SET,geolocation-!cn,✨ 默认代理
   - RULE-SET,cn_domain,直连
   - RULE-SET,cn_ip,直连
